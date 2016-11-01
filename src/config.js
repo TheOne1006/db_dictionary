@@ -15,12 +15,12 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'React Redux Example',
-    description: 'All the modern best practices in one example.',
+    title: '数据字典 - react 字典',
+    description: 'react,redux,mysql,MySQL 数据字典',
     head: {
-      titleTemplate: 'React Redux Example: %s',
+      titleTemplate: 'MySQL 数据字典: %s',
       meta: [
-        {name: 'description', content: 'All the modern best practices in one example.'},
+        {name: 'description', content: '通过Mysql 数据结构生成数据字典.'},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: 'React Redux Example'},
         {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
