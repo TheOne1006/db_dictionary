@@ -6,15 +6,27 @@ import FlatButton from 'material-ui/FlatButton';
 
 const styles = {
   title: {
-    cursor: 'pointer',
-  },
+    cursor: 'pointer'
+  }
 };
+
+// const menuItems = [
+//   {
+//     route: 'get-started',
+//     text: 'Get Started'
+//   }, {
+//     route: 'customization',
+//     text: 'Customization'
+//   }, {
+//     route: 'components',
+//     text: 'Components'
+//   }
+// ];
 
 const MainHeader = () => (
   <AppBar
-    title={<span style={styles.title}>Title</span>}
-    iconClassNameRight="muidocs-icon-navigation-expand-more"
-    iconElementLeft={<IconButton><NavigationClose /></IconButton>}
+    title={<span style={styles.title} > Title </span>}
+    iconElementLeft={<IconButton> <NavigationClose/> </IconButton>}
     iconElementRight={<FlatButton label="Save" />}
   />
 );

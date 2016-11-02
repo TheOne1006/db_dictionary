@@ -31,12 +31,14 @@ export default class App extends Component {
     store: PropTypes.object.isRequired
   };
   render() {
+    const {children} = this.props;
     return (
       <MuiThemeProvider>
         <div>
           <Helmet {...config.app.head}/>
           <MainHeader />
           <InfoBar/>
+          {children}
         </div>
       </MuiThemeProvider>
     );
